@@ -16,25 +16,34 @@
 <body>
     <div class="container">
         <!-- HEADER -->
-        <div class="row text-bg-dark">
+        <div class="row my-bg-darkest px-md-5">
 
-            <div class="col pt-4 pb-4">
+            <div class="col pt-4 pb-4 my-text-white">
                     <strong>START BOOTSTRAP</strong>
             </div>
 
             <div class="col text-end pt-3">
-                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-bars text-secondary border-2 rounded-pill"></i></button>
+                <div class="row">
+                    <div class="col">
+                        <button type="button" class="btn btn-outline-light w-25 d-md-none"><i class="fa-solid fa-bars text-secondary border-2 rounded-pill"></i></button>
+                    </div>
+                    <div class="col justify-content-around my-text-white d-none d-md-block col-md-12 pt-md-2">
+                        <span class="mx-md-2"><strong>PORTFOLIO</strong></span>
+                        <span class="mx-md-2"><strong>ABOUT</strong></span>
+                        <span class="mx-md-2"><strong>CONTACT</strong></span>
+                    </div>
+                </div>
             </div>
 
         </div>
         <!-- FINE HEADER -->
 
         <!-- JUMBOTRON -->
-        <div class="row text-bg-success text-center">
+        <div class="row my-bg-success my-text-white text-center">
 
             <div class="col pt-5 pb-5">            
 
-                    <div class="avatar w-50 m-auto">
+                    <div class="avatar w-50 m-auto px-md-5">
                         <img src="img/avatar.svg" alt="">
                     </div>
 
@@ -68,29 +77,29 @@
 
             <div class="container">
 
-                <div class="row text-center">
+                <div class="row text-center g-3">
 
-                    <div class="col-12 px-3">
+                    <div class="col-12 col-md-6 col-lg-4">                        
                         <img class="w-100 rounded-3" src="img/cabin.png" alt="">
                     </div>
 
-                    <div class="col-12 mt-4 px-3 ">
+                    <div class="col-12 col-md-6 col-lg-4  ">
                         <img class="w-100 rounded-3" src="img/cake.png" alt="">
                     </div>
 
-                    <div class="col-12 mt-4 px-3">
+                    <div class="col-12 col-md-6 col-lg-4 ">
                         <img class="w-100 rounded-3" src="img/circus.png" alt="">
                     </div>
 
-                    <div class="col-12 mt-4 px-3">
+                    <div class="col-12 col-md-6 col-lg-4 ">
                         <img class="w-100 rounded-3" src="img/game.png" alt="">
                     </div>
 
-                    <div class="col-12 mt-4 px-3">
+                    <div class="col-12 col-md-6 col-lg-4 ">
                         <img class="w-100 rounded-3" src="img/safe.png" alt="">
                     </div>
 
-                    <div class="col-12 mt-4 px-3">
+                    <div class="col-12 col-md-6 col-lg-4 ">
                         <img class="w-100 rounded-3" src="img/submarine.png" alt="">
                     </div>
 
@@ -102,7 +111,7 @@
         <!-- FINE PORTFOLIO -->
 
         <!-- ABOUT -->
-        <div class="row pt-5 text-bg-success text-center mt-5">
+        <div class="row pt-5 my-bg-success my-text-white text-center mt-5">
 
             <h2>ABOUT</h2>
 
@@ -113,11 +122,16 @@
                 &#8213;&#8213;&#8213;
 
             </div>
-
-            <div class="col">
-                <p class="text-start  m-auto w-50 mt-4">Freelancer is a free botstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization</p>
-                <p class="text-start  m-auto w-50 mt-4">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
-                <button type="button" class="btn btn-outline-light mt-5 mb-4"><i class="fa-solid fa-download"></i> Download</button>
+        </div>
+        <div class="row my-bg-success my-text-white text-center">
+            <div class="col-12 px-5 col-md-6 px-md-0 ">
+                <p class="text-start  mx-auto mt-4 px-5 d-md-flex flex-md-row ">Freelancer is a free botstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization</p>
+            </div>
+            <div class="col-12 px-5 col-md-6 px-md-0 ">
+                <p class="text-start  mx-auto mt-4 px-5  d-md-flex flex-md-row">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+            </div>
+            <div class="div">
+                <button  class="btn btn-outline-light mt-5 mb-4 w-25 mt-md-0"><i class="fa-solid fa-download"></i> Download
             </div>
 
         </div>
@@ -140,21 +154,33 @@
 
             </div>
 
-            <div class="col text-start">
+            <div class="col w-50 mx-auto">
 
-                <div class="name m-auto w-50 mt-4">Name</div>
-                <div class="write m-auto w-50"><input type="text"></div>
+                <div class="input-group w-50 mx-auto mb-3">
+                    <input type="text" class="form-control pb-0 no-border" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1">
+                </div>
 
-                <div class="email m-auto w-50 mt-4">Email Address</div>
-                <div class="write m-auto w-50"><input type="email"></div>
+                <hr class="mx-auto shorter">
 
-                <div class="phone m-auto w-50 mt-4">Phone Number</div>
-                <div class="write m-auto w-50"><input type="number"></div>
+                <div class="input-group w-50 mx-auto mb-3">
+                    <input type="text" class="form-control pb-0 no-border" placeholder="Email Address" aria-label="Email Address" aria-describedby="basic-addon1">
+                </div>
 
-                <div class="msg m-auto w-50 mt-4">Message</div>
-                <div class="write m-auto w-50"><input type="text"></div>
-                <div class="send-button m-auto w-50 mt-3">
-                    <button class="btn btn-primary bg-success" type="submit">Send</button>
+                <hr class="mx-auto shorter">
+
+                <div class="input-group w-50 mx-auto mb-3">
+                    <input type="text" class="form-control pb-0 no-border" placeholder="Phone Number" aria-label="Phone Number" aria-describedby="basic-addon1">
+                </div>
+
+                <hr class="mx-auto shorter">
+
+                <div class="form-floating w-50 mx-auto mt-4">
+                    <textarea class="form-control text-start just-border-bottom" placeholder="Comments" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Comments</label>
+                </div>
+
+                <div class="send-button shorter mx-auto text-start mt-3">
+                    <button class="btn btn-secondary my-bg-success my-text-white" type="submit">Send</button>
                 </div>
 
             </div>
@@ -163,41 +189,44 @@
         <!-- FINE CONTACT ME -->
 
         <!-- FOOTER -->
-        <div class="row pt-5 text-bg-secondary text-center mt-5">
+        <div class="row pt-5 my-bg-dark my-text-white text-center mt-5 ">
 
-            <span>LOCATION</span>
-            <span>2215 John Daniel Drive Clark, MO 54243</span>
-            <span class="mt-5">AROUND THE WEB</span>
+            <div class="col-12 col-md-4">
+                <div>LOCATION</div>
+                <div>2215 John Daniel Drive Clark, MO 54243</div>
+            </div>
 
-            <div class="col mt-3">
-
-                <span class="mx-2 border rounded-circle p-2 w">
+            <div id="circle" class="col-12 mt-3 col-md-4 mt-md-0">
+                <div class="mt-5 mb-3 mt-md-0 mb-md-2">AROUND THE WEB</div>
+                
+                <span class="mx-2 border rounded-circle p-2 mt-md-5 ">
                     <i class="fa-brands fa-facebook-f"></i>
                 </span>
 
-                <span class="mx-2 border rounded-circle p-2 w">
+                <span class="mx-2 border rounded-circle p-2 mt-md-5 ">
                     <i class="fa-brands fa-google-plus-g"></i>
                 </span>
 
-                <span class="mx-2 border rounded-circle p-2 w">
+                <span class="mx-2 border rounded-circle p-2 mt-md-5 ">
                     <i class="fa-brands fa-twitter"></i>
                 </span>
 
-                <span class="mx-2 border rounded-circle p-2 w">
+                <span class="mx-2 border rounded-circle p-2 mt-md-5 ">
                     <i class="fa-brands fa-linkedin-in"></i>
                 </span>
 
             </div>
 
-            <span class="mt-5">ABOUT FREELANCER</span>
+            <div class="col-9 mx-auto col-md-4">
+                <div class="mt-5 mt-md-0">ABOUT FREELANCER</div>
 
-            <p class="w-75 m-auto mt-2 pb-5">Freelance is a free to use, open source Bootstrap theme created by <span class="text-success">Start Bootstrap</span>.</p>
-
+                <p class="m-auto mt-2 pb-5">Freelance is a free to use, open source Bootstrap theme created by <span class="text-success">Start Bootstrap</span>.</p>
+            </div>
         </div>
         <!-- FINE FOOTER -->
 
         <!-- COPYRIGHT -->
-        <div class="row text-center text-bg-dark">
+        <div class="row text-center my-bg-darkest my-text-white">
             <div class="col mt-5 mb-5">
                 Copyright © Your Website 2019
             </div>

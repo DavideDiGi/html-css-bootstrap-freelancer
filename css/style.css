@@ -1,0 +1,38 @@
+:root{
+    --my-darkest-color:#2C3F4F;
+    --my-dark-color:#3B546D;
+    --my-success-color:#1ABC9B;
+    --white-color: white;
+}
+
+.my-bg-dark{
+    background-color: var(--my-dark-color);
+}
+.my-bg-darkest{
+    background-color: var(--my-darkest-color);
+}
+.my-bg-success{
+    background-color: var(--my-success-color);
+}
+.my-text-white{
+    color: var(--white-color);
+}
+
+.no-border{
+    border:0;
+    border-radius: 0;
+}
+.just-border-bottom{
+    border-top:0;
+    border-left:0;
+    border-right:0;
+    border-radius: 0;
+}
+.shorter{
+    max-width: 45%;
+}
+
+#circle > span > i{
+    height: 20px;
+    width: 20px;
+}
