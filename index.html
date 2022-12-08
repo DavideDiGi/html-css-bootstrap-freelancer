@@ -10,29 +10,40 @@
    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css"integrity="sha512-YFENbnqHbCRmJt5d+9lHimyEMt8LKSNTMLSaHjvsclnZGICeY/0KYEeiHwD1Ux4Tcao0h60tdcMv+0GljvWyHg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
 
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <!-- HEADER -->
         <div class="row my-bg-darkest px-md-5">
 
             <div class="col pt-4 pb-4 my-text-white">
-                    <strong>START BOOTSTRAP</strong>
+                    <strong class="fs-5">START BOOTSTRAP</strong>
             </div>
 
             <div class="col text-end pt-3">
+
                 <div class="row">
+
                     <div class="col">
-                        <button type="button" class="btn btn-outline-light w-25 d-md-none"><i class="fa-solid fa-bars text-secondary border-2 rounded-pill"></i></button>
+
+                        <button type="button" class="btn btn-outline-light d-md-none"><i class="fa-solid fa-bars text-secondary border-2 rounded-pill"></i></button>
+
                     </div>
-                    <div class="col justify-content-around my-text-white d-none d-md-block col-md-12 pt-md-2">
-                        <span class="mx-md-2"><strong>PORTFOLIO</strong></span>
-                        <span class="mx-md-2"><strong>ABOUT</strong></span>
-                        <span class="mx-md-2"><strong>CONTACT</strong></span>
+
+                    <div id="nav-container" class="col justify-content-around my-text-white d-none d-md-block col-md-12 pt-md-2">
+
+                        <a href="#" class="mx-md-2"><strong>PORTFOLIO</strong></a href="#">
+                        <a href="#" class="mx-md-2"><strong>ABOUT</strong></a href="#">
+                        <a href="#" class="mx-md-2"><strong>CONTACT</strong></a href="#">
+
                     </div>
+
                 </div>
+                
             </div>
 
         </div>
@@ -41,20 +52,22 @@
         <!-- JUMBOTRON -->
         <div class="row my-bg-success my-text-white text-center">
 
-            <div class="col pt-5 pb-5">            
+            <div id="jumbotron" class="col pt-5 pb-5">            
 
                     <div class="avatar w-50 m-auto px-md-5">
-                        <img src="img/avatar.svg" alt="">
+                        <img id="avatar" src="img/avatar.svg" alt="">
                     </div>
 
-                    <h1 class="mt-4">START BOOTSTRAP</h1>
+                    <h1 class="mt-4 fs-1"><strong>START BOOTSTRAP</strong></h1>
 
                     <div class="starlines mt-4">
-                        &#8213;&#8213;&#8213;
-                        <i class="fa-solid fa-star"></i>
-                        &#8213;&#8213;&#8213;
+                        <span class="white-line" ></span>
+                        <i class="fa-solid fa-star fa-2x mx-md-2 mx-lg-4"></i>
+                        <span class="white-line"></span>
                     </div>
+
                     <div class="jumbotron-nav mt-4"> GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</div>
+
             </div>
 
         </div>
@@ -68,9 +81,9 @@
                     <h2>PORTFOLIO</h2>
 
                     <div class="starlines mt-4">
-                        &#8213;&#8213;&#8213;
-                        <i class="fa-solid fa-star"></i>
-                        &#8213;&#8213;&#8213;
+                        <span class="white-line bg-dark" ></span>
+                        <i class="fa-solid fa-star fa-2x mx-md-2 mx-lg-4"></i>
+                        <span class="white-line bg-dark"></span>
                     </div>
 
             </div>
@@ -79,28 +92,34 @@
 
                 <div class="row text-center g-3">
 
-                    <div class="col-12 col-md-6 col-lg-4">                        
+                    <div class="col-12 col-md-6 col-lg-4 overlay-parent position-relative">                        
                         <img class="w-100 rounded-3" src="img/cabin.png" alt="">
+                        <div class="overlay rounded-3"><i class="fa-solid fa-plus fa-5x"></i></div>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-4  ">
+                    <div class="col-12 col-md-6 col-lg-4 overlay-parent position-relative">
                         <img class="w-100 rounded-3" src="img/cake.png" alt="">
+                        <div class="overlay rounded-3"><i class="fa-solid fa-plus fa-5x"></i></div>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-4 ">
+                    <div class="col-12 col-md-6 col-lg-4 overlay-parent position-relative">
                         <img class="w-100 rounded-3" src="img/circus.png" alt="">
+                        <div class="overlay rounded-3"><i class="fa-solid fa-plus fa-5x"></i></div>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-4 ">
+                    <div class="col-12 col-md-6 col-lg-4 overlay-parent position-relative">
                         <img class="w-100 rounded-3" src="img/game.png" alt="">
+                        <div class="overlay rounded-3"><i class="fa-solid fa-plus fa-5x"></i></div>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-4 ">
+                    <div class="col-12 col-md-6 col-lg-4 overlay-parent position-relative">
                         <img class="w-100 rounded-3" src="img/safe.png" alt="">
+                        <div class="overlay rounded-3"><i class="fa-solid fa-plus fa-5x"></i></div>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-4 ">
+                    <div class="col-12 col-md-6 col-lg-4 overlay-parent position-relative">
                         <img class="w-100 rounded-3" src="img/submarine.png" alt="">
+                        <div class="overlay rounded-3"><i class="fa-solid fa-plus fa-5x"></i></div>
                     </div>
 
                 </div>
@@ -117,21 +136,31 @@
 
             <div class="starlines mt-3">
 
-                &#8213;&#8213;&#8213;
-                <i class="fa-solid fa-star"></i>
-                &#8213;&#8213;&#8213;
+                <span class="white-line" ></span>
+                <i class="fa-solid fa-star fa-2x mx-md-2 mx-lg-4"></i>
+                <span class="white-line" ></span>
 
             </div>
         </div>
+
         <div class="row my-bg-success my-text-white text-center">
-            <div class="col-12 px-5 col-md-6 px-md-0 ">
-                <p class="text-start  mx-auto mt-4 px-5 d-md-flex flex-md-row ">Freelancer is a free botstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization</p>
+
+            <div class="col-10 mx-auto px-5 col-md-6 px-md-0 ">
+
+                <p class="text-start  mx-auto mt-4 px-5   ">Freelancer is a free botstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization</p>
+
             </div>
-            <div class="col-12 px-5 col-md-6 px-md-0 ">
-                <p class="text-start  mx-auto mt-4 px-5  d-md-flex flex-md-row">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+
+            <div class="col-10 mx-auto px-5 col-md-6 px-md-0 ">
+
+                <p class="text-start  mx-auto mt-4 px-5">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+
             </div>
+
             <div class="div">
-                <button  class="btn btn-outline-light mt-5 mb-4 w-25 mt-md-0"><i class="fa-solid fa-download"></i> Download
+
+                <button id="green-button" class="btn btn-outline-light mt-5 mb-4 mt-md-0"><i class="fa-solid fa-download"></i> Download
+
             </div>
 
         </div>
@@ -146,43 +175,31 @@
 
                 <div class="starlines mt-4">
 
-                    &#8213;&#8213;&#8213;
-                    <i class="fa-solid fa-star"></i>
-                    &#8213;&#8213;&#8213;
+                    <span class="white-line bg-dark" ></span>
+                    <i class="fa-solid fa-star fa-2x mx-md-2 mx-lg-4"></i>
+                    <span class="white-line bg-dark" ></span>
 
                 </div>
 
             </div>
 
-            <div class="col w-50 mx-auto">
+            <div class="col-7 mx-auto mt-5 col-md-9 col-lg-10">
 
-                <div class="input-group w-50 mx-auto mb-3">
-                    <input type="text" class="form-control pb-0 no-border" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1">
+                <form action="GET">
+
+                    <input class="w-100" type="text" placeholder="Name" name="Name">
+                    <input class="w-100 mt-2" type="text" placeholder="Email Address" name="Email" >
+                    <input class="w-100 mt-2" type="text" placeholder="Phone Number" name="Number" >
+                    <textarea class="w-100 mt-3" name="Message" id="" cols="30" rows="6" placeholder="Message"></textarea>
+
+                </form>
+
+                <div class="send-button mx-auto text-start mt-3 position-relative overlay-button-parent">
+
+                    <button id="last-button" class="my-bg-success my-text-white" type="submit">Send</button>
+                    <div class="overlay-btn rounded-3"></div>
+
                 </div>
-
-                <hr class="mx-auto shorter">
-
-                <div class="input-group w-50 mx-auto mb-3">
-                    <input type="text" class="form-control pb-0 no-border" placeholder="Email Address" aria-label="Email Address" aria-describedby="basic-addon1">
-                </div>
-
-                <hr class="mx-auto shorter">
-
-                <div class="input-group w-50 mx-auto mb-3">
-                    <input type="text" class="form-control pb-0 no-border" placeholder="Phone Number" aria-label="Phone Number" aria-describedby="basic-addon1">
-                </div>
-
-                <hr class="mx-auto shorter">
-
-                <div class="form-floating w-50 mx-auto mt-4">
-                    <textarea class="form-control text-start just-border-bottom" placeholder="Comments" style="height: 100px"></textarea>
-                    <label for="floatingTextarea2">Comments</label>
-                </div>
-
-                <div class="send-button shorter mx-auto text-start mt-3">
-                    <button class="btn btn-secondary my-bg-success my-text-white" type="submit">Send</button>
-                </div>
-
             </div>
 
         </div>
@@ -191,49 +208,56 @@
         <!-- FOOTER -->
         <div class="row pt-5 my-bg-dark my-text-white text-center mt-5 ">
 
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 col-lg-4">
                 <div>LOCATION</div>
                 <div>2215 John Daniel Drive Clark, MO 54243</div>
             </div>
 
-            <div id="circle" class="col-12 mt-3 col-md-4 mt-md-0">
+            <div id="circle" class="col-12 mt-3 col-md-4 mt-md-0 col-lg-4">
+
                 <div class="mt-5 mb-3 mt-md-0 mb-md-2">AROUND THE WEB</div>
                 
-                <span class="mx-2 border rounded-circle p-2 mt-md-5 ">
+                <a class="mx-2 rounded-logo mt-md-5 ">
                     <i class="fa-brands fa-facebook-f"></i>
-                </span>
+                </a>
 
-                <span class="mx-2 border rounded-circle p-2 mt-md-5 ">
+                <a class="mx-2 rounded-logo mt-md-5 ">
                     <i class="fa-brands fa-google-plus-g"></i>
-                </span>
+                </a>
 
-                <span class="mx-2 border rounded-circle p-2 mt-md-5 ">
+                <a class="mx-2 rounded-logo mt-md-5 ">
                     <i class="fa-brands fa-twitter"></i>
-                </span>
+                </a>
 
-                <span class="mx-2 border rounded-circle p-2 mt-md-5 ">
+                <a class="mx-2 rounded-logo mt-md-5 ">
                     <i class="fa-brands fa-linkedin-in"></i>
-                </span>
+                </a>
 
             </div>
 
             <div class="col-9 mx-auto col-md-4">
+
                 <div class="mt-5 mt-md-0">ABOUT FREELANCER</div>
 
-                <p class="m-auto mt-2 pb-5">Freelance is a free to use, open source Bootstrap theme created by <span class="text-success">Start Bootstrap</span>.</p>
+                <p class="m-auto mt-2 pb-5">Freelance is a free to use, open source Bootstrap theme created by <a href="#" class="text-success last-a">Start Bootstrap</a>.</p>
+
             </div>
+
         </div>
         <!-- FINE FOOTER -->
 
         <!-- COPYRIGHT -->
         <div class="row text-center my-bg-darkest my-text-white">
+
             <div class="col mt-5 mb-5">
                 Copyright © Your Website 2019
             </div>
+
         </div>
         <!-- FINE COPYRIGHT -->
         
 
     </div>
+
 </body>
 </html>

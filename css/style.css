@@ -1,10 +1,13 @@
+/* COLORI PRINCIPALI */
 :root{
     --my-darkest-color:#2C3F4F;
     --my-dark-color:#3B546D;
     --my-success-color:#1ABC9B;
-    --white-color: white;
+    --my-white-color: white;
 }
 
+
+/* HEADER */
 .my-bg-dark{
     background-color: var(--my-dark-color);
 }
@@ -15,24 +18,144 @@
     background-color: var(--my-success-color);
 }
 .my-text-white{
-    color: var(--white-color);
+    color: var(--my-white-color);
 }
 
-.no-border{
-    border:0;
-    border-radius: 0;
-}
-.just-border-bottom{
-    border-top:0;
-    border-left:0;
-    border-right:0;
-    border-radius: 0;
-}
-.shorter{
-    max-width: 45%;
+.fa-solid.fa-bars{
+    font-size: 1.3em;
+    padding: 0 0px;
 }
 
-#circle > span > i{
+#nav-container a{
+    text-decoration: none;
+    color: var(--my-white-color);
+    padding: 5px;
+}
+#nav-container a:hover{
+    color: var(--my-success-color);
+}
+/* FINE HEADER */
+
+
+/* JUMBOTRON */
+#jumbotron *:not(.fa-solid.fa-star){
+    font-size: 1.2em;
+}
+#avatar{
+    max-width: 275px;
+}
+
+.white-line{
+    display: inline-block;
+    height: 4px;
+    width: 15%;
+    background-color: var(--my-white-color);
+    vertical-align: middle;
+    border-radius:5px;
+}
+.fa-solid.fa-star{
+    vertical-align: middle;
+}
+/* FINE JUMBOTRON */
+
+
+/* PORTFOLIO */
+.overlay{
+    position: absolute; 
+    width: calc(100% - 16px);
+    bottom: 0; 
+    top: 0;
+    background-color: #1ABC9B99;
+    color: var(--my-white-color);
+    display: none;
+}
+.overlay > i{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.overlay-parent:hover > .overlay{
+    display: block;
+    cursor: pointer;
+}
+/* FINE PORTFOLIO */
+
+
+/* ABOUT */
+#green-button{
+    max-width: 382px;
+}
+/* FINE ABOUT */
+
+
+/* CONTACT ME */
+form > *{
+    padding-bottom: 25px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0.5px solid black;
+    outline: 0;
+}
+form > *:focus{
+    border-bottom: 0.5px solid rgb(30, 137, 231);
+}
+
+::placeholder {
+    color: black;
+    font-size: 1.2rem;
+}
+#last-button{
+    border-radius: 5px;
+    border: none;
+    width: 63px;
+    padding: 8px ;
+}
+.overlay-btn{
+    position: absolute; 
+    width: 63px;
+    bottom: 0; 
+    top: 0;
+    /* background-color: #1ABC9B99; */
+    background-color: rgba(0, 0, 0, 0.2);
+    color: var(--my-white-color);
+    display: none;
+}
+div.overlay-button-parent:hover .overlay-btn{
+    display: block;
+    cursor: pointer;
+}
+/* FINE CONTACT ME */
+
+
+/* FOOTER */
+#circle > a{
+    text-decoration: none;
+    color: var(--my-white-color);
+}
+#circle > a >i:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+    
+}
+#circle > a > i{
     height: 20px;
     width: 20px;
+    padding: 4px;
 }
+.rounded-logo{
+    border: 1px solid var(--my-white-color);
+    border-radius: 50%;
+    padding: 10px 8px;
+}
+
+a.last-a{
+    text-decoration: none;
+}
+a.last-a:hover{
+    text-decoration: underline;
+    opacity: 0.7;
+    cursor: pointer;
+}
+/* FINE FOOTER */
